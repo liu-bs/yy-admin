@@ -25,7 +25,7 @@ export default {
 $hrader-height:60px;
 .yy-admin-header{
   background:#dcdef6;
-  boder-radius:2px;
+  border-radius:2px;
   line-height:$hrader-height;
   height:$hrader-height;
   padding:0 6px;

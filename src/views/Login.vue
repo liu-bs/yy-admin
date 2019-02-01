@@ -27,13 +27,14 @@ export default {
         return{
             formDate:{ //表单用户输入的数据
                 aname:'admin',
-                apwd:'6666'
+                apwd:'123456'
 
             }
         }
     },
     methods:{
         doLogin(){
+            // this.$store.state.globalSettings
             var url = this.$store.state.globalSettings.apiUrl+`/admin/${this.formDate.aname}/${this.formDate.apwd}`;
             console.log(url)
             this.$axios.get(url).then((res)=>{
